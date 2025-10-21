@@ -34,24 +34,14 @@
       }
     </script>
   </head>
-  <body class="no-js">
+  <body>
     <header class="bg-clower-light">
-      <div class="container navbar" data-nav-container data-menu-open="false">
+      <div class="container navbar">
         <div>
-          <a href="/" class="font-display text-xl">Clower</a>
+          <span class="font-display text-xl">Clower</span>
           <p class="sr-only">Studio web éco-responsable</p>
         </div>
-        <button
-          type="button"
-          class="nav-toggle focus-visible:outline focus-visible:outline-2 focus-visible:outline-black"
-          data-nav-toggle
-          aria-expanded="false"
-          aria-controls="primary-navigation"
-        >
-          <span class="sr-only">Ouvrir le menu</span>
-          <span class="nav-toggle-icon" aria-hidden="true"></span>
-        </button>
-        <nav id="primary-navigation" aria-label="Navigation principale" class="nav-links" data-nav>
+        <nav aria-label="Navigation principale" class="nav-links">
           <a href="/portfolio/">Portfolio</a>
           <a href="/blog/">Blog</a>
           <a href="/a-propos/">À propos</a>
@@ -62,19 +52,19 @@
     </header>
 
     <main>
-      <!-- Intention: Hero souffle d'introduction pour apporter calme et confiance dès l'arrivée. Technique: texte court, CTA unique, illustration légère. -->
+      <!-- Intention: Hero manifeste qui pose le ton "Le web, autrement." et crée une émotion de clarté et confiance. -->
       <section class="hero bg-clower-light" aria-labelledby="hero-title">
         <div class="container">
-          <p class="tagline">Studio web vivant et sobre</p>
+          <p class="tagline">Studio web essentiel</p>
           <h1 id="hero-title" class="font-display text-clower-dark text-4xl md:text-6xl tracking-tight leading-tight max-w-3xl mt-4">
             Le web, autrement.
           </h1>
           <p class="max-w-3xl mt-6 text-lg text-clower-dark leading-relaxed">
-            Des sites vivants, clairs et accessibles. Pensés pour les structures engagées dans l'éducation, la santé et la parentalité. Chaque projet respire la sobriété et l'humain.
+            Je conçois des sites sobres, rapides et utiles pour les acteurs engagés en éducation, santé, parentalité et économie sociale. Chaque interface est pensée pour respecter le vivant, inspirer la confiance et durer.
           </p>
           <div class="mt-10 flex flex-col md:flex-row gap-4 md:items-center">
-            <a class="btn-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/offre/">Découvrir comment je travaille</a>
-            <span class="badge-inline">Éco-conception · Accessibilité · Poésie</span>
+            <a class="btn-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/offre/">Explorer l'offre Clower</a>
+            <span class="badge-inline">Eco-conception, accessibilité, poésie</span>
           </div>
           <figure class="mt-12 hero-illustration">
             <img src="/assets/img/leaf.svg" width="320" height="320" alt="Illustration feuille qui symbolise l'éco-conception" loading="lazy" decoding="async" />
@@ -153,118 +143,128 @@
           </div>
           <div class="text-center mt-12">
             <a class="btn-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/offre/">Découvrir le processus complet</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Intention: Apporter la preuve humaine par des études de cas concrètes. Technique: cartes narratives avec CTA vers le portfolio. -->
-      <section class="section" aria-labelledby="cas-title">
+      <!-- Intention: Montrer les piliers de la proposition de valeur pour rassurer et guider. Technique: cartes statiques légères. -->
+      <section class="section" aria-labelledby="piliers-title">
         <div class="container">
-          <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
-            <div>
-              <h2 id="cas-title" class="font-display text-3xl md:text-4xl tracking-tight">Ils m'ont fait confiance.</h2>
-              <p class="mt-4 max-w-2xl">
-                Trois collaborations qui montrent comment un site peut redevenir un allié vivant au service de la mission.
-              </p>
-            </div>
-            <a class="btn-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/portfolio/">Voir plus de projets</a>
-          </div>
+          <h2 id="piliers-title" class="font-display text-3xl md:text-4xl tracking-tight text-clower-dark text-center">Les piliers Clower</h2>
+          <p class="max-w-3xl mx-auto text-center mt-4">
+            Des expériences numériques vivantes qui respectent votre audience et la planète.
+          </p>
           <div class="grid md:grid-cols-3 gap-6 mt-10">
-            <article class="card" aria-labelledby="melanie-title">
-              <img src="/assets/img/portrait.svg" width="320" height="220" alt="Portrait stylisé représentant Mélanie, kinésiologue." class="w-full h-auto rounded-xl" loading="lazy" decoding="async" />
-              <h3 id="melanie-title" class="font-display text-2xl mt-6">Mélanie – Kinésiologue à Sarlat</h3>
+            <article class="card" aria-label="Pilier humain">
+              <h3 class="font-display text-xl text-clower-dark">Humain</h3>
               <p class="mt-4 text-clower-dark">
-                Un site doux et lisible pour accompagner ses patientes et simplifier la prise de rendez-vous.
+                Dialogue constant, écoute active et ateliers participatifs pour aligner le site sur vos réalités de terrain.
               </p>
-              <a class="inline-link mt-6" href="/portfolio/">Lire le cas complet</a>
             </article>
-            <article class="card" aria-labelledby="stephan-title">
-              <img src="/assets/img/leaf.svg" width="320" height="220" alt="Motif organique symbolisant les espaces de coworking." class="w-full h-auto rounded-xl" loading="lazy" decoding="async" />
-              <h3 id="stephan-title" class="font-display text-2xl mt-6">Stéphan – Espaces de coworking scientifiques</h3>
+            <article class="card" aria-label="Pilier impact">
+              <h3 class="font-display text-xl text-clower-dark">Impact</h3>
               <p class="mt-4 text-clower-dark">
-                Une navigation clarifiée et une communication simplifiée pour des chercheurs en quête de fluidité.
+                Des contenus structurés pour amplifier vos messages, optimiser le SEO et faciliter la prise de contact.
               </p>
-              <a class="inline-link mt-6" href="/portfolio/">Lire le cas complet</a>
             </article>
-            <article class="card" aria-labelledby="lightway-title">
-              <img src="/assets/img/leaf.svg" width="320" height="220" alt="Illustration abstraite pour Lightway." class="w-full h-auto rounded-xl" loading="lazy" decoding="async" />
-              <h3 id="lightway-title" class="font-display text-2xl mt-6">Lightway – Design d'impact</h3>
+            <article class="card" aria-label="Pilier design">
+              <h3 class="font-display text-xl text-clower-dark">Design</h3>
               <p class="mt-4 text-clower-dark">
-                Un site clair, vivant et aligné avec l'équipe pour soutenir des projets à impact positif.
+                Des interfaces sobres, inclusives et rapides, qui laissent respirer vos contenus et vos visiteurs.
               </p>
-              <a class="inline-link mt-6" href="/portfolio/">Lire le cas complet</a>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- Intention: Rassurer sur la fluidité du parcours de collaboration. Technique: timeline responsive en 5 étapes. -->
+      <!-- Intention: Timeline process pour projeter la collaboration en toute transparence. Technique: timeline pure CSS. -->
       <section class="section bg-white" aria-labelledby="process-title">
         <div class="container">
-          <h2 id="process-title" class="font-display text-3xl md:text-4xl tracking-tight text-center">Un processus clair, humain et sans jargon.</h2>
-          <p class="max-w-3xl mx-auto text-center mt-4">
-            Chaque étape est validée ensemble pour avancer sereinement et garder le cap sur l'essentiel.
-          </p>
+          <h2 id="process-title" class="font-display text-3xl md:text-4xl tracking-tight text-clower-dark text-center">Un process clair en 5 étapes</h2>
           <div class="timeline mt-16">
             <div class="timeline-step" data-step="1">
-              <p class="font-semibold">Découverte 🌱</p>
-              <p class="text-sm text-clower-gray">Immersion dans votre projet, vos publics, vos objectifs.</p>
+              <p class="font-semibold">Exploration</p>
+              <p class="text-sm text-clower-gray">Audit, ateliers et objectifs partagés.</p>
             </div>
             <div class="timeline-step" data-step="2">
-              <p class="font-semibold">Design ✏️</p>
-              <p class="text-sm text-clower-gray">Co-création d'une interface sobre, testée avec vos équipes.</p>
+              <p class="font-semibold">Stratégie</p>
+              <p class="text-sm text-clower-gray">Arborescence, contenus et SEO responsable.</p>
             </div>
             <div class="timeline-step" data-step="3">
-              <p class="font-semibold">Développement ⚙️</p>
-              <p class="text-sm text-clower-gray">HTML pur, CSS Tailwind minimal, performance en ligne de mire.</p>
+              <p class="font-semibold">Design</p>
+              <p class="text-sm text-clower-gray">Maquettes sobres, testées avec vos publics.</p>
             </div>
             <div class="timeline-step" data-step="4">
-              <p class="font-semibold">Transmission 📘</p>
-              <p class="text-sm text-clower-gray">Documentation claire, prise en main et formation personnalisée.</p>
+              <p class="font-semibold">Développement</p>
+              <p class="text-sm text-clower-gray">HTML pur, CSS Tailwind minimal, JS vanille.</p>
             </div>
             <div class="timeline-step" data-step="5">
-              <p class="font-semibold">Suivi 🤝</p>
-              <p class="text-sm text-clower-gray">Un accompagnement après lancement pour garder le site vivant.</p>
+              <p class="font-semibold">Transmission</p>
+              <p class="text-sm text-clower-gray">Formation, documentation, suivi durable.</p>
             </div>
-          </div>
-          <div class="text-center mt-12">
-            <a class="btn-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/contact/">Parler de votre projet</a>
           </div>
         </div>
       </section>
 
-      <!-- Intention: Inviter en douceur à la prise de contact avec un formulaire minimal et rassurant. Technique: formulaire accessible et script léger partagé. -->
-      <section class="section contact" aria-labelledby="contact-title">
+      <!-- Intention: Mettre en avant des réalisations pour preuve sociale, cartes sobres. -->
+      <section class="section" aria-labelledby="realisations-title">
         <div class="container">
-          <div class="max-w-3xl mx-auto text-center">
-            <h2 id="contact-title" class="font-display text-3xl md:text-4xl tracking-tight">Allons-y ensemble.</h2>
-            <p class="mt-4">
-              Vous avez un projet, une idée ou simplement l'envie d'échanger&nbsp;? Prenons un moment pour en parler, sans pression.
-            </p>
-          </div>
-          <form class="contact-form mt-10" data-contact-form aria-describedby="contact-note">
-            <div class="grid md:grid-cols-2 gap-6">
-              <label class="form-field">
-                <span class="form-label">Nom complet</span>
-                <input type="text" name="name" required autocomplete="name" />
-              </label>
-              <label class="form-field">
-                <span class="form-label">Adresse e-mail</span>
-                <input type="email" name="email" required autocomplete="email" />
-              </label>
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div>
+              <h2 id="realisations-title" class="font-display text-3xl md:text-4xl tracking-tight">Réalisations récentes</h2>
+              <p class="mt-4 max-w-2xl">Deux projets qui incarnent un web utile et léger.</p>
             </div>
-            <label class="form-field mt-6">
-              <span class="form-label">Votre message</span>
-              <textarea name="message" rows="4" required></textarea>
-            </label>
-            <label class="form-consent mt-6">
-              <input type="checkbox" name="consent" required />
-              <span>J'accepte que mes informations soient utilisées pour me répondre. Aucun spam, jamais.</span>
-            </label>
-            <button type="submit" class="btn-primary mt-8 focus-visible:outline focus-visible:outline-2 focus-visible:outline-black">Envoyer le message</button>
-            <p id="contact-note" class="mt-4 text-sm text-clower-dark" data-form-status aria-live="polite"></p>
-            <p class="mt-2 text-sm text-clower-gray">Je réponds toujours avec bienveillance, et jamais avec jargon. Vous préférez un appel&nbsp;? <a class="inline-link" href="/contact/">Réserver un échange</a>.</p>
-          </form>
+            <a class="btn-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/portfolio/">Voir tout le portfolio</a>
+          </div>
+          <div class="grid md:grid-cols-2 gap-6 mt-10">
+            <article class="card" aria-labelledby="proj1-title">
+              <p class="tag">Éducation</p>
+              <h3 id="proj1-title" class="font-display text-2xl mt-4">École des Transitions</h3>
+              <p class="mt-4 text-clower-dark">Site pédagogique low-tech qui facilite l'inscription aux ateliers avec un tableau de bord sobre.</p>
+              <a class="inline-link mt-6" href="/projet/slug/">Découvrir le projet</a>
+            </article>
+            <article class="card" aria-labelledby="proj2-title">
+              <p class="tag badge-green">Santé</p>
+              <h3 id="proj2-title" class="font-display text-2xl mt-4">Maison Périnatale</h3>
+              <p class="mt-4 text-clower-dark">Accompagnement digital pour les jeunes parents : contenus rassurants, formulaire de suivi, ressources audios.</p>
+              <a class="inline-link mt-6" href="/projet/slug/">Découvrir le projet</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Intention: Blog pour nourrir la réflexion et amener vers l'offre. -->
+      <section class="section bg-white" aria-labelledby="blog-title">
+        <div class="container">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div>
+              <h2 id="blog-title" class="font-display text-3xl md:text-4xl tracking-tight">À lire sur le blog</h2>
+              <p class="mt-4 max-w-2xl">Des ressources pour créer un numérique conscient.</p>
+            </div>
+            <a class="btn-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/blog/">Explorer le blog</a>
+          </div>
+          <div class="grid md:grid-cols-3 gap-6 mt-10">
+            <article class="card" aria-labelledby="blog1">
+              <h3 id="blog1" class="font-display text-xl">Sobriété numérique : par où commencer ?</h3>
+              <p class="mt-4">Audit carbone, optimisation du contenu et hébergement vert.</p>
+              <a class="inline-link mt-6" href="/blog/slug/">Lire l'article</a>
+            </article>
+            <article class="card" aria-labelledby="blog2">
+              <h3 id="blog2" class="font-display text-xl">Accessibilité : faire simple et utile</h3>
+              <p class="mt-4">Concevoir pour tous sans complexifier vos interfaces.</p>
+              <a class="inline-link mt-6" href="/blog/slug/">Lire l'article</a>
+            </article>
+            <article class="card" aria-labelledby="blog3">
+              <h3 id="blog3" class="font-display text-xl">Un SEO humain</h3>
+              <p class="mt-4">Des contenus clairs qui répondent aux vraies questions.</p>
+              <a class="inline-link mt-6" href="/blog/slug/">Lire l'article</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Intention: CTA final vers l'offre pour convertir. -->
+      <section class="section" aria-labelledby="cta-offre">
+        <div class="container text-center">
+          <h2 id="cta-offre" class="font-display text-3xl md:text-4xl tracking-tight">Prêt à alléger votre présence en ligne ?</h2>
+          <p class="max-w-2xl mx-auto mt-4">Concevons ensemble un site qui révèle votre impact sans superflu.</p>
+          <a class="btn-primary mt-8 focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/offre/">Découvrir l'offre complète</a>
         </div>
       </section>
     </main>
@@ -274,7 +274,6 @@
         <div>
           <p class="font-display text-xl">Clower</p>
           <p class="mt-4 max-w-md">Studio web sobre fondé par Maxime Gorenflot-Martin, pour les initiatives qui prennent soin du vivant.</p>
-          <p class="mt-4 text-sm text-clower-gray">Empreinte estimée&nbsp;: 0,21&nbsp;g CO₂ / visite</p>
         </div>
         <div>
           <h3 class="font-semibold">Raccourcis</h3>
@@ -286,10 +285,8 @@
           </ul>
         </div>
         <div>
-          <h3 class="font-semibold">Restons en lien</h3>
+          <h3 class="font-semibold">Joindre Clower</h3>
           <p class="mt-4">maxime@clower.fr<br />+33 6 00 00 00 00</p>
-          <a class="inline-link mt-4" href="https://www.linkedin.com/in/maxime-gorenflot-martin" rel="noreferrer">LinkedIn</a>
-          <p class="mt-6 text-sm text-clower-gray">Conçu avec soin par Clower 🌿</p>
         </div>
       </div>
     </footer>

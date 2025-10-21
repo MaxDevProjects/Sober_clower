@@ -5,50 +5,6 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.body.classList.remove('no-js');
-
-  const navToggles = document.querySelectorAll('[data-nav-toggle]');
-  navToggles.forEach((toggle) => {
-    const container = toggle.closest('[data-nav-container]');
-    if (!container) return;
-    const navId = toggle.getAttribute('aria-controls');
-    const nav = navId ? document.getElementById(navId) : container.querySelector('[data-nav]');
-    if (!nav) return;
-    const srLabel = toggle.querySelector('.sr-only');
-
-    const setState = (isOpen) => {
-      container.dataset.menuOpen = isOpen ? 'true' : 'false';
-      toggle.setAttribute('aria-expanded', String(isOpen));
-      nav.setAttribute('data-open', String(isOpen));
-      if (srLabel) {
-        srLabel.textContent = isOpen ? 'Fermer le menu' : 'Ouvrir le menu';
-      }
-    };
-
-    setState(container.dataset.menuOpen === 'true');
-
-    toggle.addEventListener('click', () => {
-      const isOpen = container.dataset.menuOpen === 'true';
-      setState(!isOpen);
-    });
-
-    nav.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        if (window.matchMedia('(min-width: 768px)').matches) {
-          return;
-        }
-        setState(false);
-      });
-    });
-
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape' && container.dataset.menuOpen === 'true') {
-        setState(false);
-        toggle.focus();
-      }
-    });
-  });
-
   // Formulaire de contact : simulation d'envoi sobre sans dépendances.
   const contactForm = document.querySelector('[data-contact-form]');
   if (contactForm) {
