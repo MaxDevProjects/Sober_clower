@@ -33,23 +33,13 @@
       }
     </script>
   </head>
-  <body class="no-js">
+  <body>
     <header class="bg-clower-light">
-      <div class="container navbar" data-nav-container data-menu-open="false">
+      <div class="container navbar">
         <div>
           <a href="/" class="font-display text-xl">Clower</a>
         </div>
-        <button
-          type="button"
-          class="nav-toggle focus-visible:outline focus-visible:outline-2 focus-visible:outline-black"
-          data-nav-toggle
-          aria-expanded="false"
-          aria-controls="primary-navigation"
-        >
-          <span class="sr-only">Ouvrir le menu</span>
-          <span class="nav-toggle-icon" aria-hidden="true"></span>
-        </button>
-        <nav id="primary-navigation" aria-label="Navigation principale" class="nav-links" data-nav>
+        <nav aria-label="Navigation principale" class="nav-links">
           <a href="/portfolio/">Portfolio</a>
           <a href="/blog/">Blog</a>
           <a href="/a-propos/">À propos</a>
@@ -64,14 +54,14 @@
         <p class="tagline">Sobriété numérique</p>
         <h1 id="article-title" class="font-display text-4xl md:text-5xl tracking-tight max-w-3xl mt-4">Sobriété numérique : commencer par l'essentiel</h1>
         <p class="mt-4 text-clower-gray">Par Maxime Gorenflot-Martin — 15 janvier 2024</p>
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="mt-12 grid md:grid-cols-3 gap-12">
           <!-- Intention: Sommaire sticky pour faciliter la lecture longue. Technique: JS minimal pour générer la liste. -->
           <aside class="card sticky" aria-labelledby="sommaire">
             <h2 id="sommaire" class="font-display text-xl">Sommaire</h2>
             <div data-toc class="mt-4"></div>
           </aside>
           <!-- Intention: Article dense mais aéré, textes clairs. -->
-          <article class="article-content md:col-span-2" data-article>
+          <article class="article-content md:grid-cols-2 md:col-span-2" data-article>
             <h2>Mesurer avant d'agir</h2>
             <p>La sobriété numérique commence par la mesure. Listez vos pages essentielles, pesez vos ressources et observez les parcours utilisateurs. Sans chiffres, impossible de prioriser.</p>
             <p>Utilisez des outils comme EcoIndex, Lighthouse ou des scripts maison. Clower privilégie les métriques compréhensibles par tous : temps de chargement, poids des pages, données transférées.</p>

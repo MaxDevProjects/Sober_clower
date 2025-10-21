@@ -14,23 +14,13 @@
     <link rel="preload" href="/assets/css/main.css" as="style" />
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
-  <body class="no-js">
+  <body>
     <header class="bg-clower-light">
-      <div class="container navbar" data-nav-container data-menu-open="false">
+      <div class="container navbar">
         <div>
           <a href="/" class="font-display text-xl">Clower</a>
         </div>
-        <button
-          type="button"
-          class="nav-toggle focus-visible:outline focus-visible:outline-2 focus-visible:outline-black"
-          data-nav-toggle
-          aria-expanded="false"
-          aria-controls="primary-navigation"
-        >
-          <span class="sr-only">Ouvrir le menu</span>
-          <span class="nav-toggle-icon" aria-hidden="true"></span>
-        </button>
-        <nav id="primary-navigation" aria-label="Navigation principale" class="nav-links" data-nav>
+        <nav aria-label="Navigation principale" class="nav-links">
           <a href="/portfolio/">Portfolio</a>
           <a href="/blog/">Blog</a>
           <a href="/a-propos/">À propos</a>
@@ -64,7 +54,7 @@
         </section>
         <section class="mt-12">
           <h2 class="font-display text-2xl">Résultats</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+          <div class="grid md:grid-cols-3 gap-6 mt-6">
             <div class="card">
               <p class="font-semibold">-72 %</p>
               <p class="mt-2 text-sm text-clower-gray">de poids par page</p>
