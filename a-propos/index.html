@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>À propos — Clower</title>
+    <meta name="description" content="Maxime Gorenflot-Martin, designer développeur, crée des sites web sobres et humains." />
+    <link rel="canonical" href="https://clower.fr/a-propos/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="À propos — Clower" />
+    <meta property="og:description" content="Rencontrez Maxime, créateur de Clower, studio web engagé." />
+    <meta property="og:url" content="https://clower.fr/a-propos/" />
+    <meta property="og:image" content="https://clower.fr/assets/img/portrait.svg" />
+    <link rel="preload" href="/assets/css/main.css" as="style" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body class="no-js">
+    <header class="bg-clower-light">
+      <div class="container navbar" data-nav-container data-menu-open="false">
+        <div>
+          <a href="/" class="font-display text-xl">Clower</a>
+        </div>
+        <button
+          type="button"
+          class="nav-toggle focus-visible:outline focus-visible:outline-2 focus-visible:outline-black"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="sr-only">Ouvrir le menu</span>
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
+        <nav id="primary-navigation" aria-label="Navigation principale" class="nav-links" data-nav>
+          <a href="/portfolio/">Portfolio</a>
+          <a href="/blog/">Blog</a>
+          <a href="/a-propos/">À propos</a>
+          <a href="/contact/">Contact</a>
+          <a class="btn-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/offre/">Découvrir l'offre</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="py-20" aria-labelledby="apropos-title">
+      <div class="container max-w-3xl text-center">
+        <!-- Intention: Présenter Maxime avec chaleur et sobriété. -->
+        <h1 id="apropos-title" class="font-display text-4xl md:text-5xl tracking-tight">Maxime Gorenflot-Martin</h1>
+        <div class="h-px bg-clower-gray mt-4 animate-breathe" aria-hidden="true"></div>
+        <p class="mt-6 text-lg leading-relaxed">Designer et développeur, je crée des expériences web sobres pour les projets qui prennent soin du vivant.</p>
+        <figure class="mt-10">
+          <img src="/assets/img/portrait.svg" width="320" height="320" alt="Portrait illustré de Maxime" loading="lazy" decoding="async" class="mx-auto" />
+        </figure>
+
+        <!-- Intention: Manifeste pour partager la vision. -->
+        <section class="mt-16">
+          <h2 class="font-display text-3xl tracking-tight">Manifeste</h2>
+          <p class="mt-6 leading-relaxed">
+            Clower incarne un retour à l'essentiel : des sites rapides, poétiques et utiles. J'accompagne les structures engagées à reprendre la main sur leur outil numérique et à raconter leur impact sans artifices.
+          </p>
+          <p class="mt-4 leading-relaxed">
+            Mon approche combine écoute, design systémique et développement sobre. Chaque projet est une conversation continue qui place l'humain au centre.
+          </p>
+        </section>
+
+        <!-- Intention: Valeurs. -->
+        <section class="mt-16">
+          <h2 class="font-display text-3xl tracking-tight">Valeurs</h2>
+          <div class="badge-list mt-6">
+            <span class="tag">Clarté</span>
+            <span class="tag">Empathie</span>
+            <span class="tag">Transmission</span>
+            <span class="tag">Responsabilité</span>
+          </div>
+        </section>
+
+        <!-- Intention: CTA vers offre. -->
+        <section class="mt-16">
+          <h2 class="font-display text-3xl tracking-tight">Créons un site qui vous ressemble</h2>
+          <a class="btn-primary mt-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/offre/">Découvrir l'offre</a>
+        </section>
+      </div>
+    </main>
+
+    <footer aria-label="Pied de page à propos">
+      <div class="container footer-grid">
+        <div>
+          <p class="font-display text-xl">Clower</p>
+          <p class="mt-4 max-w-md">Studio web sobre pour projets éducatifs, santé et social.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold">Raccourcis</h3>
+          <ul class="list-reset space-y-4 mt-4">
+            <li><a class="inline-link" href="/offre/">Offre</a></li>
+            <li><a class="inline-link" href="/contact/">Contact</a></li>
+            <li><a class="inline-link" href="/mentions-legales/">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold">Contact</h3>
+          <p class="mt-4">maxime@clower.fr</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+</html>
