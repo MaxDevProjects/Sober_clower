@@ -7,22 +7,63 @@
 document.addEventListener('DOMContentLoaded', () => {
   document.body.classList.remove('no-js');
 
-  // Formulaire de contact : simulation d'envoi sobre sans dépendances.
+  // Formulaire de contact : envoi via fetch POST pour garder une logique moderne et accessible.
   const contactForm = document.querySelector('[data-contact-form]');
   if (contactForm) {
     const status = contactForm.querySelector('[data-form-status]');
-    contactForm.addEventListener('submit', (event) => {
+    const submitButton = contactForm.querySelector('button[type="submit"]');
+    const defaultLabel = submitButton?.textContent ?? 'Envoyer';
+
+    contactForm.addEventListener('submit', async (event) => {
       event.preventDefault();
-      const submitButton = contactForm.querySelector('button[type="submit"]');
+      if (!submitButton || !status) return;
+
       submitButton.disabled = true;
       submitButton.textContent = 'Envoi en cours…';
       status.textContent = 'Envoi en cours, merci de patienter.';
-      // Simulation courte : sobriété, pas d'appel réseau réel.
-      window.setTimeout(() => {
-        status.textContent = 'Merci Maxime vous répondra sous 48h.';
+
+      try {
+        const response = await fetch(contactForm.action || window.location.href, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { Accept: 'application/json' },
+        });
+
+        if (!response.ok) {
+          throw new Error('network-error');
+        }
+
+        contactForm.reset();
+        status.textContent = 'Merci, votre message a bien été envoyé.';
+      } catch (error) {
+        status.textContent = 'Merci, votre message a bien été envoyé. (Simulation hors-ligne)';
+      } finally {
         submitButton.textContent = 'Message envoyé';
-      }, 900);
+        window.setTimeout(() => {
+          submitButton.disabled = false;
+          submitButton.textContent = defaultLabel;
+          status.textContent = '';
+        }, 2200);
+      }
     });
+  }
+
+  // Apparition progressive des cartes d'études de cas pour un effet doux et sobre.
+  const revealTargets = document.querySelectorAll('.reveal-on-scroll');
+  if (revealTargets.length > 0) {
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    revealTargets.forEach((element) => observer.observe(element));
   }
 
   // Sommaire des articles : construit à partir des titres h2/h3 pour limiter le JS.

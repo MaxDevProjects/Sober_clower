@@ -41,44 +41,120 @@
     </header>
 
     <main>
-      <!-- Intention: Présenter le portfolio comme une galerie sobre. -->
-      <section class="hero" aria-labelledby="portfolio-title">
-        <div class="container max-w-4xl">
-          <h1 id="portfolio-title" class="font-display text-4xl md:text-6xl tracking-tight">Projets qui respirent</h1>
-          <p class="mt-6 text-lg leading-relaxed">Chaque réalisation est une rencontre humaine et une exploration des possibles d'un web vivant.</p>
+      <!-- Intention: accueillir avec une vue d'ensemble sincère et artisanale. -->
+      <section class="hero bg-clower-light" aria-labelledby="portfolio-title">
+        <div class="container max-w-4xl text-center">
+          <p class="section-eyebrow">Sélection artisanale</p>
+          <h1 id="portfolio-title" class="font-display text-4xl md:text-6xl tracking-tight mt-6">Ils m’ont fait confiance</h1>
+          <p class="hero-lead mt-6">
+            Ces réalisations racontent ma manière d’accompagner : écouter, clarifier, concevoir des outils web légers qui servent
+            le quotidien d’équipes engagées.
+          </p>
         </div>
       </section>
 
-      <!-- Intention: Grille de projets. -->
+      <!-- Intention: détailler des projets réels et alignés à la démarche Clower. -->
       <section class="section bg-white" aria-labelledby="liste-projets">
         <div class="container">
-          <h2 id="liste-projets" class="font-display text-3xl tracking-tight">Sélection 2023-2024</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-            <article class="card" aria-labelledby="proj-a">
-              <h3 id="proj-a" class="font-display text-xl">École des Transitions</h3>
-              <p class="mt-4">Plateforme pédagogique low-tech, gestion d'inscriptions et contenus guidés.</p>
-              <a class="inline-link mt-6" href="/projet/slug/">Voir l'étude de cas</a>
+          <div class="section-intro text-center">
+            <h2 id="liste-projets" class="font-display text-3xl md:text-4xl tracking-tight">Collaborations sélectionnées</h2>
+            <p class="section-lead mt-4">
+              Une courte sélection de projets livrés ou en cours. Chaque carte résume le besoin, mon rôle et l’impact obtenu avec
+              une approche sobre et humaine.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+            <article class="card text-left" aria-labelledby="proj-melanie">
+              <h3 id="proj-melanie" class="font-display text-2xl">Mélanie Kinésiologie</h3>
+              <p class="mt-2 text-sm text-clower-gray">Site vitrine thérapeutique — WordPress sur mesure</p>
+              <p class="mt-4">
+                Création d’un univers doux et rassurant pour une kinésiologue souhaitant un site qui lui ressemble enfin après
+                une expérience frustrante sur Wix.
+              </p>
+              <ul class="list-reset space-y-4 mt-4">
+                <li>Charte visuelle complète et photographie directionnelle.</li>
+                <li>Architecture de contenus simple à maintenir par la cliente.</li>
+                <li>Performances optimisées (Lighthouse 98/100) et suivi SEO.</li>
+              </ul>
+              <p class="mt-4 text-sm text-clower-gray">Impact : autonomie totale et conversions en hausse dès le premier mois.</p>
             </article>
-            <article class="card" aria-labelledby="proj-b">
-              <h3 id="proj-b" class="font-display text-xl">Maison Périnatale</h3>
-              <p class="mt-4">Site d'accompagnement parental avec ressources audio et agenda apaisant.</p>
-              <a class="inline-link mt-6" href="/projet/slug/">Voir l'étude de cas</a>
+            <article class="card text-left" aria-labelledby="proj-cap">
+              <h3 id="proj-cap" class="font-display text-2xl">CAP Événementiel</h3>
+              <p class="mt-2 text-sm text-clower-gray">Mini-sites d’événements — Système réutilisable</p>
+              <p class="mt-4">
+                Mise en place d’un générateur de mini-sites sobres pour publier rapidement les événements clients sans alourdir
+                la gestion interne.
+              </p>
+              <ul class="list-reset space-y-4 mt-4">
+                <li>Bibliothèque de templates modulaires basés sur Tailwind.</li>
+                <li>CI/CD léger pour déployer une instance en quelques minutes.</li>
+                <li>Documentation claire pour l’équipe opérationnelle.</li>
+              </ul>
+              <p class="mt-4 text-sm text-clower-gray">Impact : production accélérée (−60 % de temps) et charge mentale réduite.</p>
             </article>
-            <article class="card" aria-labelledby="proj-c">
-              <h3 id="proj-c" class="font-display text-xl">Collectif Parenthèse</h3>
-              <p class="mt-4">Site associatif, calendrier participatif et contenus multilingues.</p>
-              <a class="inline-link mt-6" href="/projet/slug/">Voir l'étude de cas</a>
+            <article class="card text-left" aria-labelledby="proj-bmh">
+              <h3 id="proj-bmh" class="font-display text-2xl">BMH Brest Métropole Habitat</h3>
+              <p class="mt-2 text-sm text-clower-gray">Plugin WordPress — Pré-inscriptions internes</p>
+              <p class="mt-4">
+                Développement d’un plugin personnalisé pour gérer les pré-inscriptions aux événements internes tout en respectant
+                les exigences RGPD.
+              </p>
+              <ul class="list-reset space-y-4 mt-4">
+                <li>Interface d’administration intégrée et accessible.</li>
+                <li>Automatisation des notifications et exports sécurisés.</li>
+                <li>Audit de sécurité et tests utilisateur accompagnés.</li>
+              </ul>
+              <p class="mt-4 text-sm text-clower-gray">Impact : suivi simplifié, zéro outil tiers, temps libéré pour l’équipe.</p>
+            </article>
+            <article class="card text-left" aria-labelledby="proj-familiedu">
+              <h3 id="proj-familiedu" class="font-display text-2xl">familiEdu</h3>
+              <p class="mt-2 text-sm text-clower-gray">Plateforme web — Projet personnel en IEF</p>
+              <p class="mt-4">
+                Un compagnon numérique pour les familles en instruction en famille : gestion de dossiers pédagogiques, suivi des
+                apprentissages et partage de ressources.
+              </p>
+              <ul class="list-reset space-y-4 mt-4">
+                <li>Design system accessible et évolutif.</li>
+                <li>Stack Nuxt 3 + Tailwind 4 + Strapi hébergée en France.</li>
+                <li>Co-construction avec un panel de parents utilisateurs.</li>
+              </ul>
+              <p class="mt-4 text-sm text-clower-gray">Impact : MVP validé, feuille de route co-écrite avec la communauté.</p>
+            </article>
+            <article class="card text-left" aria-labelledby="proj-achile">
+              <h3 id="proj-achile" class="font-display text-2xl">ACHILE</h3>
+              <p class="mt-2 text-sm text-clower-gray">Preuve de concept santé — FastAPI &amp; Nuxt</p>
+              <p class="mt-4">
+                Prototype d’un espace sécurisé pour les professionnels de santé avec intégration RPPS et authentification
+                Keycloak.
+              </p>
+              <ul class="list-reset space-y-4 mt-4">
+                <li>Architecture micro-services Dockerisée.</li>
+                <li>Parcours utilisateur testé avec un panel de médecins.</li>
+                <li>Documentation technique livrée pour l’équipe projet.</li>
+              </ul>
+              <p class="mt-4 text-sm text-clower-gray">Impact : preuve de faisabilité validée, lancement de la phase produit.</p>
+            </article>
+            <article class="card text-left" aria-labelledby="proj-swapii">
+              <h3 id="proj-swapii" class="font-display text-2xl">Swapii</h3>
+              <p class="mt-2 text-sm text-clower-gray">Marketplace circulaire — Prototype Vue.js</p>
+              <p class="mt-4">
+                Conception et développement d’une interface responsable pour favoriser l’échange d’habits et jouets pour enfants
+                via un parcours simple et joyeux.
+              </p>
+              <ul class="list-reset space-y-4 mt-4">
+                <li>Design responsive et animations sobres.</li>
+                <li>Recherche utilisateur et tests de scénarios réels.</li>
+                <li>Transmission de bonnes pratiques d’éco-conception.</li>
+              </ul>
+              <p class="mt-4 text-sm text-clower-gray">Impact : prototype validé par les premiers utilisateurs et investisseurs.</p>
             </article>
           </div>
-        </div>
-      </section>
-
-      <!-- Intention: CTA vers offre pour conversion. -->
-      <section class="section" aria-labelledby="cta-offre-portfolio">
-        <div class="container text-center">
-          <h2 id="cta-offre-portfolio" class="font-display text-3xl tracking-tight">Et si votre projet rejoignait le portfolio ?</h2>
-          <p class="mt-4 max-w-2xl mx-auto">Clower vous accompagne pour un site précis, rapide et inspirant.</p>
-          <a class="btn-primary mt-8 focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/offre/">Découvrir l'offre</a>
+          <div class="text-center mt-16">
+            <p class="text-base text-clower-gray">Envie d’explorer ensemble une prochaine collaboration&nbsp;?</p>
+            <a class="btn-primary mt-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/contact/"
+              >Discuter de mon projet</a
+            >
+          </div>
         </div>
       </section>
     </main>

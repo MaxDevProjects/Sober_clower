@@ -14,3 +14,14 @@ Prototype statique du site Clower créé pour démontrer une approche web sobre 
 
 ## Git
 Le travail est commité sur la branche `work`. Poussez vos modifications vers le dépôt distant habituel une fois la revue terminée.
+
+Une branche `develop` a été créée pour accueillir l'intégralité du prototype. Si elle n'existe pas encore en local, créez-la à
+partir de `work` avec `git branch develop`. Après validation sur `work`, synchronisez-la via
+
+```bash
+git checkout develop
+git merge work
+```
+
+Cette organisation permet de poursuivre l'itération quotidienne sur `work` tout en conservant une branche `develop` toujours
+alignée avec l'état courant du site.
