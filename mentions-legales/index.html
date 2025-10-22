@@ -9,7 +9,29 @@
     <link rel="preload" href="/assets/css/main.css" as="style" />
     <link rel="stylesheet" href="/assets/css/main.css" />
   </head>
-  <body>
+  <body class="no-js">
+    <header class="bg-clower-light">
+      <div class="container navbar">
+        <div>
+          <a href="/" class="font-display text-xl">Clower</a>
+          <p class="sr-only">Studio web éco-responsable</p>
+        </div>
+        <details class="nav-menu">
+          <summary class="nav-toggle focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" aria-label="Navigation principale">
+            <span class="nav-toggle-icon" aria-hidden="true"></span>
+            <span class="nav-toggle-label nav-toggle-label-closed" aria-hidden="true">Menu</span>
+            <span class="nav-toggle-label nav-toggle-label-open" aria-hidden="true">Fermer</span>
+          </summary>
+          <nav aria-label="Navigation principale" class="nav-links">
+            <a href="/portfolio/">Portfolio</a>
+            <a href="/blog/">Blog</a>
+            <a href="/a-propos/">À propos</a>
+            <a href="/contact/">Contact</a>
+            <a class="btn-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/offre/">Découvrir l'offre</a>
+          </nav>
+        </details>
+      </div>
+    </header>
     <main class="py-20" aria-labelledby="mentions-title">
       <div class="container max-w-3xl">
         <h1 id="mentions-title" class="font-display text-4xl tracking-tight">Mentions légales</h1>
@@ -34,5 +56,6 @@
     <footer class="bg-white" aria-label="Bas de page mentions">
       <div class="container text-sm text-clower-gray">© Clower, 2024 — Site statique sobre.</div>
     </footer>
+    <script src="/assets/js/main.js" defer></script>
   </body>
 </html>

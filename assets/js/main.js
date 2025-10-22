@@ -5,6 +5,8 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.remove('no-js');
+
   // Formulaire de contact : simulation d'envoi sobre sans dépendances.
   const contactForm = document.querySelector('[data-contact-form]');
   if (contactForm) {
