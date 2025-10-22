@@ -23,61 +23,200 @@
             <p class="sr-only">Studio web éco-responsable</p>
           </div>
           <details class="nav-menu">
-          <summary class="nav-toggle focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" aria-label="Navigation principale">
-            <span class="nav-toggle-icon" aria-hidden="true"></span>
-            <span class="nav-toggle-label nav-toggle-label-closed" aria-hidden="true">Menu</span>
-            <span class="nav-toggle-label nav-toggle-label-open" aria-hidden="true">Fermer</span>
-          </summary>
-          <nav aria-label="Navigation principale" class="nav-links">
-            <a href="/portfolio/">Portfolio</a>
-            <a href="/blog/">Blog</a>
-            <a href="/a-propos/">À propos</a>
-            <a href="/contact/">Contact</a>
-            <a class="btn-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/offre/">Découvrir l'offre</a>
-          </nav>
-        </details>
+            <summary class="nav-toggle focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" aria-label="Navigation principale">
+              <span class="nav-toggle-icon" aria-hidden="true"></span>
+              <span class="nav-toggle-label nav-toggle-label-closed" aria-hidden="true">Menu</span>
+              <span class="nav-toggle-label nav-toggle-label-open" aria-hidden="true">Fermer</span>
+            </summary>
+            <nav aria-label="Navigation principale" class="nav-links">
+              <a href="/portfolio/">Portfolio</a>
+              <a href="/blog/">Blog</a>
+              <a href="/a-propos/">À propos</a>
+              <a href="/contact/">Contact</a>
+              <a class="btn-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/offre/">Découvrir l'offre</a>
+            </nav>
+          </details>
         </div>
       </div>
     </header>
 
-    <main class="py-20" aria-labelledby="apropos-title">
-      <div class="container max-w-3xl text-center">
-        <!-- Intention: Présenter Maxime avec chaleur et sobriété. -->
-        <h1 id="apropos-title" class="font-display text-4xl md:text-5xl tracking-tight">Maxime Gorenflot-Martin</h1>
-        <div class="h-px bg-clower-gray mt-4 animate-breathe" aria-hidden="true"></div>
-        <p class="mt-6 text-lg leading-relaxed">Designer et développeur, je crée des expériences web sobres pour les projets qui prennent soin du vivant.</p>
-        <figure class="mt-10">
-          <img src="/assets/img/portrait.svg" width="320" height="320" alt="Portrait illustré de Maxime" loading="lazy" decoding="async" class="mx-auto" />
-        </figure>
-
-        <!-- Intention: Manifeste pour partager la vision. -->
-        <section class="mt-16">
-          <h2 class="font-display text-3xl tracking-tight">Manifeste</h2>
-          <p class="mt-6 leading-relaxed">
-            Clower incarne un retour à l'essentiel : des sites rapides, poétiques et utiles. J'accompagne les structures engagées à reprendre la main sur leur outil numérique et à raconter leur impact sans artifices.
-          </p>
-          <p class="mt-4 leading-relaxed">
-            Mon approche combine écoute, design systémique et développement sobre. Chaque projet est une conversation continue qui place l'humain au centre.
-          </p>
-        </section>
-
-        <!-- Intention: Valeurs. -->
-        <section class="mt-16">
-          <h2 class="font-display text-3xl tracking-tight">Valeurs</h2>
-          <div class="badge-list mt-6">
-            <span class="tag">Clarté</span>
-            <span class="tag">Empathie</span>
-            <span class="tag">Transmission</span>
-            <span class="tag">Responsabilité</span>
+    <main aria-labelledby="about-title">
+      <article>
+        <section id="about-hero" class="bg-white py-24">
+          <div class="container">
+            <!-- Intention UX : instaurer un premier contact humain, calme et rassurant. -->
+            <div class="flex flex-col md:flex-row items-center gap-12">
+              <div class="hero-copy text-left">
+                <p class="section-eyebrow">Souffle 1 · Introduction</p>
+                <h1 id="about-title" class="font-display text-4xl md:text-5xl tracking-tight mt-4">Enchanté, je suis Maxime 🌿</h1>
+                <p class="mt-6 text-lg leading-relaxed text-muted">
+                  Développeur et designer freelance, j’ai fondé Clower pour accompagner les structures engagées
+                  dans l’éducation, la santé et la parentalité. Je conçois des sites vivants, sobres et profondément humains.
+                </p>
+                <p class="mt-4 leading-relaxed text-muted">
+                  Pour moi, un site web est un espace de respiration : il doit raconter votre intention, simplifier votre quotidien
+                  et préserver les ressources de vos équipes comme de la planète.
+                </p>
+                <div class="mt-8 flex flex-col md:flex-row gap-4">
+                  <a class="btn-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="#method">
+                    Découvrir ma manière de travailler
+                  </a>
+                  <a class="btn-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/portfolio/">
+                    Voir des réalisations
+                  </a>
+                </div>
+              </div>
+              <div class="hero-portrait">
+                <figure>
+                  <img src="/assets/img/portrait.svg" width="320" height="320" alt="Portrait illustré de Maxime" loading="lazy" decoding="async" class="rounded-2xl shadow-subtle animate-breathe" />
+                  <figcaption class="sr-only">Portrait illustré de Maxime Gorenflot-Martin</figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
         </section>
 
-        <!-- Intention: CTA vers offre. -->
-        <section class="mt-16">
-          <h2 class="font-display text-3xl tracking-tight">Créons un site qui vous ressemble</h2>
-          <a class="btn-primary mt-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/offre/">Découvrir l'offre</a>
+        <section id="my-story" class="py-24">
+          <div class="container max-w-3xl text-center">
+            <!-- Intention UX : partager le parcours personnel pour nourrir l’identification. -->
+            <p class="section-eyebrow">Souffle 2 · Mon histoire</p>
+            <h2 class="font-display text-3xl md:text-4xl tracking-tight mt-4">Du code à l’humain</h2>
+            <p class="mt-6 leading-relaxed text-muted">
+              J’ai commencé il y a plus de dix ans, guidé par la curiosité du code et l’envie de créer des expériences utiles.
+              Au fil des rencontres, j’ai compris que ma vraie motivation réside dans ce que le web permet de relier :
+              des personnes, des savoirs, des causes qui transforment la société.
+            </p>
+            <p class="mt-4 leading-relaxed text-muted">
+              Aujourd’hui, je conçois chaque site comme on cultive un jardin : avec soin, simplicité et respect de l’équilibre.
+              L’essentiel n’est pas d’en faire plus, mais de faire juste.
+            </p>
+            <blockquote class="quote-card mt-10">
+              <p class="font-display text-2xl">« Le web n’a pas besoin d’être bruyant pour être impactant. »</p>
+            </blockquote>
+          </div>
         </section>
-      </div>
+
+        <section id="philosophy" class="bg-clower-light py-24">
+          <div class="container text-center">
+            <!-- Intention UX : expliciter la vision qui guide chaque projet. -->
+            <p class="section-eyebrow">Souffle 3 · Philosophie</p>
+            <h2 class="font-display text-3xl md:text-4xl tracking-tight mt-4">Le web vivant</h2>
+            <p class="mt-6 max-w-3xl mx-auto text-muted">
+              Clower, c’est la contraction de Clover — le trèfle, symbole de vie — et de LOW, comme low tech.
+              Mon approche repose sur trois piliers indissociables :
+              créer un web compréhensible, léger et transmis avec générosité.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+              <article class="card text-left h-full">
+                <span class="card-emoji" aria-hidden="true">☀️</span>
+                <h3 class="font-display text-2xl tracking-tight mt-4">Clarté</h3>
+                <p class="mt-4 text-muted">
+                  Un site qui s’explique de lui-même. Chaque mot, chaque interface
+                  est pensé pour guider vos publics sans effort.
+                </p>
+              </article>
+              <article class="card text-left h-full">
+                <span class="card-emoji" aria-hidden="true">🌿</span>
+                <h3 class="font-display text-2xl tracking-tight mt-4">Sobriété</h3>
+                <p class="mt-4 text-muted">
+                  Des solutions légères, performantes et durables. Un code juste,
+                  pensé pour durer et limiter l’empreinte carbone.
+                </p>
+              </article>
+              <article class="card text-left h-full">
+                <span class="card-emoji" aria-hidden="true">🔄</span>
+                <h3 class="font-display text-2xl tracking-tight mt-4">Transmission</h3>
+                <p class="mt-4 text-muted">
+                  Vous repartez avec les clés. Je documente, je forme et je reste présent
+                  pour que vous avanciez en autonomie.
+                </p>
+              </article>
+            </div>
+            <div class="mt-12">
+              <a class="btn-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/offre/">Découvrir l’offre</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="method" class="py-24">
+          <div class="container">
+            <!-- Intention UX : donner une vision claire et rassurante du déroulé d’un projet. -->
+            <div class="text-center max-w-3xl mx-auto">
+              <p class="section-eyebrow">Souffle 4 · Collaboration</p>
+              <h2 class="font-display text-3xl md:text-4xl tracking-tight mt-4">Ma façon de travailler</h2>
+              <p class="mt-6 leading-relaxed text-muted">
+                Travailler avec moi, c’est avant tout une relation de confiance. Nous prenons le temps de comprendre vos besoins,
+                vos contraintes et vos valeurs avant de déployer une solution sur mesure — sans usine à gaz.
+              </p>
+            </div>
+            <div class="process-grid mt-12">
+              <article class="process-step card">
+                <span class="card-emoji" aria-hidden="true">👂</span>
+                <h3 class="font-display text-xl tracking-tight">1. Écoute</h3>
+                <p class="text-muted">Immersion dans votre univers, clarification des enjeux et des ressources disponibles.</p>
+              </article>
+              <article class="process-step card">
+                <span class="card-emoji" aria-hidden="true">🤝</span>
+                <h3 class="font-display text-xl tracking-tight">2. Co-création</h3>
+                <p class="text-muted">Ateliers courts pour aligner messages, parcours utilisateurs et priorités.</p>
+              </article>
+              <article class="process-step card">
+                <span class="card-emoji" aria-hidden="true">✏️</span>
+                <h3 class="font-display text-xl tracking-tight">3. Design</h3>
+                <p class="text-muted">Maquettes sobres, systèmes de composants et contenus prêts à vivre sur le web.</p>
+              </article>
+              <article class="process-step card">
+                <span class="card-emoji" aria-hidden="true">⚙️</span>
+                <h3 class="font-display text-xl tracking-tight">4. Développement</h3>
+                <p class="text-muted">Intégration soignée, performances mesurées et documentation à chaque étape.</p>
+              </article>
+              <article class="process-step card">
+                <span class="card-emoji" aria-hidden="true">📘</span>
+                <h3 class="font-display text-xl tracking-tight">5. Transmission</h3>
+                <p class="text-muted">Formation, guides d’entretien et accompagnement après mise en ligne.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="values" class="about-nomad py-24">
+          <div class="container">
+            <!-- Intention UX : relier le mode de vie à la pratique professionnelle pour ancrer la cohérence. -->
+            <div class="relative z-10 max-w-3xl mx-auto text-center">
+              <p class="section-eyebrow text-soft-white">Souffle 5 · Au-delà du code</p>
+              <h2 class="font-display text-3xl md:text-4xl tracking-tight mt-4">Un mode de vie cohérent</h2>
+              <p class="mt-6 leading-relaxed text-soft-white">
+                Je vis en famille sur la route, entre mer et montagne. Nous sommes une famille nomade engagée dans l’instruction en famille.
+                Ce rythme m’invite à poser un regard conscient sur le temps, la technologie et la liberté.
+              </p>
+              <p class="mt-4 leading-relaxed text-soft-white">
+                Cette philosophie se retrouve dans chaque projet : concevoir des espaces numériques qui laissent respirer
+                celles et ceux qui les utilisent, sans artifices ni surcharge.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="cta" class="bg-clower-light py-24">
+          <div class="container text-center">
+            <!-- Intention UX : inviter à l’échange avec douceur et sans pression commerciale. -->
+            <p class="section-eyebrow">Souffle 6 · Rencontre</p>
+            <h2 class="font-display text-3xl md:text-4xl tracking-tight mt-4">Et si on prenait un café virtuel ?</h2>
+            <p class="mt-6 leading-relaxed text-muted">
+              Vous souhaitez alléger votre présence en ligne ou imaginer un site qui respire le sens et la simplicité ?
+              Je serais ravi d’en parler avec vous autour d’un café virtuel.
+            </p>
+            <div class="mt-8 flex flex-col md:flex-row gap-4 justify-center">
+              <a class="btn-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/contact/">
+                Discuter de mon projet
+              </a>
+              <a class="btn-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="https://cal.com/">
+                Réserver un échange
+              </a>
+            </div>
+          </div>
+        </section>
+      </article>
     </main>
 
     <footer aria-label="Pied de page à propos">
