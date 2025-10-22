@@ -190,62 +190,134 @@
         </div>
       </section>
 
-      <!-- Intention: Souffle d’évaluation pour inspirer avec des preuves concrètes. Technique: cartes révélées au défilement et CTA vers le portfolio. -->
-      <section class="section bg-white" aria-labelledby="cases-title">
-        <div class="container">
-          <div class="cases-heading">
-            <div>
-              <p class="section-eyebrow">Souffle 4 — Voir du concret</p>
-              <h2 id="cases-title" class="font-display text-3xl md:text-4xl tracking-tight">Ils m’ont fait confiance.</h2>
-              <p class="section-lead mt-4">Trois collaborations où le site redevient un allié vivant au service de la mission.</p>
-            </div>
-            <a class="btn-secondary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/portfolio/"
-              >Voir plus de projets</a
+      <!--
+        Intention UX : offrir un souffle d'évaluation sincère avec des collaborations réelles.
+        Technique : cartes révélées en douceur, texte narratif et CTA progressifs.
+      -->
+      <section id="portfolio" class="section bg-clower-light" aria-labelledby="cases-title">
+        <div class="container text-center">
+          <p class="section-eyebrow">Souffle 4 — Voir du concret</p>
+          <h2 id="cases-title" class="font-display text-3xl md:text-4xl tracking-tight">Ils m’ont fait confiance 🌿</h2>
+          <p class="section-lead mt-4 max-w-2xl mx-auto">
+            Chaque projet est une rencontre humaine avant d’être un site web. J’accompagne mes clients pour rendre leur
+            présence en ligne plus claire, plus fluide et plus vivante — toujours dans une approche sobre et durable.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+            <article class="card reveal-on-scroll text-left" aria-labelledby="case-melanie">
+              <h3 id="case-melanie" class="font-display text-2xl">Mélanie Kinésiologie</h3>
+              <p class="mt-2 text-sm text-clower-gray">Site vitrine thérapeutique — WordPress sur mesure</p>
+              <p class="mt-4">
+                Mélanie souhaitait un site apaisant après un essai infructueux sur Wix. Nous avons conçu une expérience douce,
+                lisible et simple à administrer.
+              </p>
+              <p class="mt-4"><strong>Rôle Clower</strong></p>
+              <ul class="list-reset space-y-4 mt-2">
+                <li>Charte graphique : palette, typographies et visuels cohérents.</li>
+                <li>Conception UX fluide inspirée de la douceur de son accompagnement.</li>
+                <li>Développement WordPress sans builder, optimisé pour le SEO et la sobriété.</li>
+              </ul>
+              <p class="mt-4 text-sm text-clower-gray">
+                Impact : site livré clef en main, 100 % administrable, rapide à charger et accueillant sur mobile.
+              </p>
+            </article>
+            <article class="card reveal-on-scroll text-left" aria-labelledby="case-cap">
+              <h3 id="case-cap" class="font-display text-2xl">CAP Événementiel</h3>
+              <p class="mt-2 text-sm text-clower-gray">Mini-sites d’événements — Système réutilisable</p>
+              <p class="mt-4">
+                L’agence avait besoin de publier rapidement des mini-sites. Nous avons construit un socle léger et maintenable
+                pour réutiliser le même squelette.
+              </p>
+              <p class="mt-4"><strong>Rôle Clower</strong></p>
+              <ul class="list-reset space-y-4 mt-2">
+                <li>Templates modulaires pour différents événements.</li>
+                <li>Intégration responsive en TailwindCSS avec animations minimales.</li>
+                <li>Automatisation déploiement et hébergement optimisé.</li>
+              </ul>
+              <p class="mt-4 text-sm text-clower-gray">
+                Impact : temps de mise en ligne divisé par 60 %, charge technique réduite pour l’équipe.
+              </p>
+            </article>
+            <article class="card reveal-on-scroll text-left" aria-labelledby="case-bmh">
+              <h3 id="case-bmh" class="font-display text-2xl">BMH Brest Métropole Habitat</h3>
+              <p class="mt-2 text-sm text-clower-gray">Plugin WordPress — Pré-inscriptions internes</p>
+              <p class="mt-4">
+                Les équipes de communication avaient besoin d’un outil simple pour gérer les pré-inscriptions à leurs
+                événements internes.
+              </p>
+              <p class="mt-4"><strong>Rôle Clower</strong></p>
+              <ul class="list-reset space-y-4 mt-2">
+                <li>Analyse des besoins et des contraintes RGPD.</li>
+                <li>Développement d’une interface d’administration sobre et intégrée.</li>
+                <li>Automatisation du suivi des formulaires d’inscription.</li>
+              </ul>
+              <p class="mt-4 text-sm text-clower-gray">
+                Impact : inscriptions automatisées, temps libéré pour les actions de communication.
+              </p>
+            </article>
+            <article class="card reveal-on-scroll text-left" aria-labelledby="case-familiedu">
+              <h3 id="case-familiedu" class="font-display text-2xl">familiEdu</h3>
+              <p class="mt-2 text-sm text-clower-gray">Plateforme web — Projet personnel en IEF</p>
+              <p class="mt-4">
+                familiEdu aide les familles en instruction en famille à gérer leurs dossiers pédagogiques avec sérénité. Un
+                MVP vivant et inclusif.
+              </p>
+              <p class="mt-4"><strong>Rôle Clower</strong></p>
+              <ul class="list-reset space-y-4 mt-2">
+                <li>Design UX/UI complet et tests avec les premiers utilisateurs.</li>
+                <li>Développement Nuxt 3 + Tailwind 4 et back-office Strapi.</li>
+                <li>Architecture éco-conçue, modulable et facile à faire évoluer.</li>
+              </ul>
+              <p class="mt-4 text-sm text-clower-gray">
+                Impact : MVP validé, communauté pilote engagée, ouverture publique en préparation.
+              </p>
+            </article>
+            <article class="card reveal-on-scroll text-left" aria-labelledby="case-achile">
+              <h3 id="case-achile" class="font-display text-2xl">ACHILE</h3>
+              <p class="mt-2 text-sm text-clower-gray">Preuve de concept — Espace santé sécurisé</p>
+              <p class="mt-4">
+                Prototype pour simuler un espace de ressources médicales reliant les professionnels via le RPPS et un socle de
+                sécurité robuste.
+              </p>
+              <p class="mt-4"><strong>Rôle Clower</strong></p>
+              <ul class="list-reset space-y-4 mt-2">
+                <li>Prototype FastAPI + Nuxt 3 avec authentification Keycloak.</li>
+                <li>Déploiement Docker multi-services pour tester l’architecture.</li>
+                <li>Documentation technique pour l’équipe produit.</li>
+              </ul>
+              <p class="mt-4 text-sm text-clower-gray">
+                Impact : faisabilité validée, base solide pour lancer la phase de développement.
+              </p>
+            </article>
+            <article class="card reveal-on-scroll text-left" aria-labelledby="case-swapii">
+              <h3 id="case-swapii" class="font-display text-2xl">Swapii</h3>
+              <p class="mt-2 text-sm text-clower-gray">Marketplace circulaire — Prototype Vue.js</p>
+              <p class="mt-4">
+                Swapii facilite les échanges d’habits et jouets pour enfants. Nous avons créé une interface fluide pour
+                encourager la seconde main.
+              </p>
+              <p class="mt-4"><strong>Rôle Clower</strong></p>
+              <ul class="list-reset space-y-4 mt-2">
+                <li>Architecture front responsive avec Vue.js et Tailwind.</li>
+                <li>Parcours d’upload photo et filtres multi-critères.</li>
+                <li>Co-conception serrée avec l’équipe produit.</li>
+              </ul>
+              <p class="mt-4 text-sm text-clower-gray">
+                Impact : prototype livré pour valider le marché et préparer la levée de fonds.
+              </p>
+            </article>
+          </div>
+          <div class="mt-12">
+            <a class="btn-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/portfolio/"
+              >Voir plus de réalisations</a
             >
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-            <article class="card reveal-on-scroll" aria-labelledby="case-melanie">
-              <img
-                src="/assets/img/portrait.svg"
-                width="320"
-                height="220"
-                alt="Portrait stylisé représentant Mélanie, kinésiologue."
-                loading="lazy"
-                decoding="async"
-                class="card-image"
-              />
-              <h3 id="case-melanie" class="font-display text-2xl mt-6">Mélanie — Kinésiologue à Sarlat</h3>
-              <p class="mt-4">Nous avons façonné un site doux et lisible pour simplifier la prise de rendez-vous.</p>
-              <a class="inline-link mt-6" href="/portfolio/">Lire le cas complet</a>
-            </article>
-            <article class="card reveal-on-scroll" aria-labelledby="case-stephan">
-              <img
-                src="/assets/img/leaf.svg"
-                width="320"
-                height="220"
-                alt="Motif organique illustrant les espaces de coworking scientifiques."
-                loading="lazy"
-                decoding="async"
-                class="card-image"
-              />
-              <h3 id="case-stephan" class="font-display text-2xl mt-6">Stéphan — Espaces de coworking scientifiques</h3>
-              <p class="mt-4">Nous avons clarifié la navigation pour que les chercheurs trouvent rapidement leurs repères.</p>
-              <a class="inline-link mt-6" href="/portfolio/">Lire le cas complet</a>
-            </article>
-            <article class="card reveal-on-scroll" aria-labelledby="case-lightway">
-              <img
-                src="/assets/img/leaf.svg"
-                width="320"
-                height="220"
-                alt="Illustration abstraite évoquant la démarche Lightway."
-                loading="lazy"
-                decoding="async"
-                class="card-image"
-              />
-              <h3 id="case-lightway" class="font-display text-2xl mt-6">Lightway — Design d’impact</h3>
-              <p class="mt-4">Nous avons aligné le site à la démarche éthique de l’équipe pour gagner en cohérence.</p>
-              <a class="inline-link mt-6" href="/portfolio/">Lire le cas complet</a>
-            </article>
+          <div class="text-center mt-16">
+            <p class="text-base text-clower-gray">
+              Et si on concevait ensemble un site qui respire le sens et la simplicité ?
+            </p>
+            <a class="btn-primary mt-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/contact/"
+              >Discuter de mon projet</a
+            >
           </div>
         </div>
       </section>
