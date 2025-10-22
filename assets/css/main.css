@@ -301,18 +301,29 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 1.5rem 0;
-  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.navbar-logo {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 .nav-menu {
   position: relative;
   margin-left: auto;
-  width: 100%;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 .nav-toggle {
   list-style: none;
@@ -386,19 +397,17 @@ footer {
   display: none;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.25rem;
+  gap: 1rem;
   padding: 1.25rem;
   position: absolute;
-  top: 100%;
-  left: 0;
+  top: calc(100% + 0.75rem);
   right: 0;
-  margin-top: 1rem;
+  width: min(19rem, calc(100vw - 2rem));
   background: #fff;
   border-radius: 1rem;
   border: 1px solid rgba(30,30,30,0.08);
   box-shadow: 0 12px 30px rgba(0,0,0,0.12);
   z-index: 20;
-  width: 100%;
 }
 .nav-menu[open] .nav-links {
   display: flex;
@@ -442,7 +451,6 @@ footer {
     width: auto;
     gap: 1.5rem;
     padding: 0;
-    margin-top: 0;
     border: 0;
     box-shadow: none;
     background: transparent;
@@ -483,6 +491,24 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+.section-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--clower-violet);
+}
+.hero-lead {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  max-width: 46rem;
+}
+.hero-subtext {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #4B5563;
+  max-width: 40rem;
 }
 .section {
   padding: 5rem 0;
