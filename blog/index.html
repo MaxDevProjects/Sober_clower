@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog Clower — Sobriété et design responsable</title>
+    <meta name="description" content="Articles pour imaginer un web clair, sobre et engagé. Sobriété numérique, accessibilité, design inclusif." />
+    <link rel="canonical" href="https://clower.fr/blog/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Blog Clower — Sobriété et design responsable" />
+    <meta property="og:description" content="Inspiration et méthodes pour créer des sites utiles et responsables." />
+    <meta property="og:url" content="https://clower.fr/blog/" />
+    <meta property="og:image" content="https://clower.fr/assets/img/leaf.svg" />
+    <link rel="preload" href="/assets/css/main.css" as="style" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Blog Clower",
+        "description": "Sobriété numérique, design responsable, SEO utile.",
+        "url": "https://clower.fr/blog/"
+      }
+    </script>
+  </head>
+  <body class="no-js">
+    <header class="bg-clower-light">
+      <div class="container">
+        <div class="navbar">
+          <div class="navbar-brand">
+            <a href="/" class="navbar-logo font-display">Clower</a>
+            <p class="sr-only">Studio web éco-responsable</p>
+          </div>
+          <details class="nav-menu">
+          <summary class="nav-toggle focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" aria-label="Navigation principale">
+            <span class="nav-toggle-icon" aria-hidden="true"></span>
+            <span class="nav-toggle-label nav-toggle-label-closed" aria-hidden="true">Menu</span>
+            <span class="nav-toggle-label nav-toggle-label-open" aria-hidden="true">Fermer</span>
+          </summary>
+          <nav aria-label="Navigation principale" class="nav-links">
+            <a href="/portfolio/">Portfolio</a>
+            <a href="/blog/">Blog</a>
+            <a href="/a-propos/">À propos</a>
+            <a href="/contact/">Contact</a>
+            <a class="btn-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/offre/">Découvrir l'offre</a>
+          </nav>
+        </details>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Intention: Introduire le blog avec ton calme et inspirant. -->
+      <section class="hero" aria-labelledby="blog-hero">
+        <div class="container max-w-4xl">
+          <h1 id="blog-hero" class="font-display text-4xl md:text-6xl tracking-tight">Nourrir un web utile</h1>
+          <p class="mt-6 text-lg leading-relaxed">Réflexions, méthodes et retours d'expérience pour des interfaces alignées avec vos valeurs.</p>
+        </div>
+      </section>
+
+      <!-- Intention: Grille d'articles pour faciliter la navigation, avec commentaires. -->
+      <section class="section bg-white" aria-labelledby="liste-articles">
+        <div class="container">
+          <h2 id="liste-articles" class="font-display text-3xl tracking-tight">Derniers articles</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <article class="card" aria-labelledby="article1">
+              <h3 id="article1" class="font-display text-xl">Sobriété numérique : par où commencer ?</h3>
+              <p class="mt-4">Cartographier vos contenus, mesurer l'empreinte et prioriser les actions à fort impact.</p>
+              <a class="inline-link mt-6" href="/blog/slug/">Lire l'article</a>
+            </article>
+            <article class="card" aria-labelledby="article2">
+              <h3 id="article2" class="font-display text-xl">Concevoir pour la parentalité</h3>
+              <p class="mt-4">Créer des parcours rassurants et inclusifs pour des publics en quête de soutien.</p>
+              <a class="inline-link mt-6" href="/blog/slug/">Lire l'article</a>
+            </article>
+            <article class="card" aria-labelledby="article3">
+              <h3 id="article3" class="font-display text-xl">SEO à impact</h3>
+              <p class="mt-4">Écrire pour les humains d'abord, structurer pour les moteurs ensuite.</p>
+              <a class="inline-link mt-6" href="/blog/slug/">Lire l'article</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Intention: CTA vers l'offre pour poursuivre le tunnel. -->
+      <section class="section" aria-labelledby="cta-offre-blog">
+        <div class="container text-center">
+          <h2 id="cta-offre-blog" class="font-display text-3xl tracking-tight">Envie d'un site aussi sobre que vos intentions ?</h2>
+          <p class="mt-4 max-w-2xl mx-auto">Découvrez l'accompagnement Clower pour transformer vos idées en outil durable.</p>
+          <a class="btn-primary mt-8 focus-visible:outline focus-visible:outline-2 focus-visible:outline-black" href="/offre/">Découvrir l'offre</a>
+        </div>
+      </section>
+    </main>
+
+    <footer aria-label="Pied de page du blog">
+      <div class="container footer-grid">
+        <div>
+          <p class="font-display text-xl">Clower</p>
+          <p class="mt-4 max-w-md">Studio web sobre pour projets éducatifs, santé et social.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold">Raccourcis</h3>
+          <ul class="list-reset space-y-4 mt-4">
+            <li><a class="inline-link" href="/offre/">Offre</a></li>
+            <li><a class="inline-link" href="/contact/">Contact</a></li>
+            <li><a class="inline-link" href="/mentions-legales/">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold">Suivre</h3>
+          <p class="mt-4">Lettre trimestrielle sur le web durable (bientôt).</p>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+</html>
